@@ -68,7 +68,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\micha\AppData\Local\Temp\tmps5di_8ow.js
+// include: C:\Users\micha\AppData\Local\Temp\tmp3sak5yex.js
 if (!Module["expectedDataFileDownloads"]) Module["expectedDataFileDownloads"] = 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -379,23 +379,23 @@ Module["expectedDataFileDownloads"]++;
   });
 })();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmps5di_8ow.js
-// include: C:\Users\micha\AppData\Local\Temp\tmpy_9mq03p.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmp3sak5yex.js
+// include: C:\Users\micha\AppData\Local\Temp\tmpzwyczl_v.js
 // All the pre-js content up to here must remain later on, we need to run
 // it.
 if ((typeof ENVIRONMENT_IS_WASM_WORKER != "undefined" && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != "undefined" && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != "undefined" && ENVIRONMENT_IS_AUDIO_WORKLET)) Module["preRun"] = [];
 
 var necessaryPreJSTasks = Module["preRun"].slice();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmpy_9mq03p.js
-// include: C:\Users\micha\AppData\Local\Temp\tmp1nyinti5.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmpzwyczl_v.js
+// include: C:\Users\micha\AppData\Local\Temp\tmp_tofk2ya.js
 if (!Module["preRun"]) throw "Module.preRun should exist because file support used it; did a pre-js delete it?";
 
 necessaryPreJSTasks.forEach(task => {
   if (Module["preRun"].indexOf(task) < 0) throw "All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?";
 });
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmp1nyinti5.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmp_tofk2ya.js
 var arguments_ = [];
 
 var thisProgram = "./this.program";
@@ -8471,7 +8471,7 @@ function checkIncomingModuleAPI() {
 }
 
 var ASM_CONSTS = {
-  281716: ($0, $1, $2, $3, $4) => {
+  282532: ($0, $1, $2, $3, $4) => {
     if (typeof window === "undefined" || (window.AudioContext || window.webkitAudioContext) === undefined) {
       return 0;
     }
@@ -8543,7 +8543,7 @@ var ASM_CONSTS = {
     window.miniaudio.referenceCount += 1;
     return 1;
   },
-  283894: () => {
+  284710: () => {
     if (typeof (window.miniaudio) !== "undefined") {
       window.miniaudio.unlock_event_types.map(function(event_type) {
         document.removeEventListener(event_type, window.miniaudio.unlock, true);
@@ -8554,8 +8554,8 @@ var ASM_CONSTS = {
       }
     }
   },
-  284198: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
-  284302: () => {
+  285014: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
+  285118: () => {
     try {
       var temp = new (window.AudioContext || window.webkitAudioContext);
       var sampleRate = temp.sampleRate;
@@ -8565,7 +8565,7 @@ var ASM_CONSTS = {
       return 0;
     }
   },
-  284473: ($0, $1, $2, $3, $4, $5) => {
+  285289: ($0, $1, $2, $3, $4, $5) => {
     var deviceType = $0;
     var channels = $1;
     var sampleRate = $2;
@@ -8636,8 +8636,8 @@ var ASM_CONSTS = {
     device.pDevice = pDevice;
     return window.miniaudio.track_device(device);
   },
-  287350: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
-  287423: $0 => {
+  288166: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
+  288239: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     if (device.scriptNode !== undefined) {
       device.scriptNode.onaudioprocess = function(e) {};
@@ -8652,15 +8652,15 @@ var ASM_CONSTS = {
     device.webaudio = undefined;
     device.pDevice = undefined;
   },
-  287823: $0 => {
+  288639: $0 => {
     window.miniaudio.untrack_device_by_index($0);
   },
-  287873: $0 => {
+  288689: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.resume();
     device.state = window.miniaudio.device_state.started;
   },
-  288012: $0 => {
+  288828: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.suspend();
     device.state = window.miniaudio.device_state.stopped;
