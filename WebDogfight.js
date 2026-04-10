@@ -68,7 +68,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\micha\AppData\Local\Temp\tmp3sak5yex.js
+// include: C:\Users\micha\AppData\Local\Temp\tmpxehavkft.js
 if (!Module["expectedDataFileDownloads"]) Module["expectedDataFileDownloads"] = 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -321,81 +321,81 @@ Module["expectedDataFileDownloads"]++;
     }, {
       "filename": "/resources/shaders/particles.glsl",
       "start": 10129740,
-      "end": 10131212
+      "end": 10131328
     }, {
       "filename": "/resources/shaders/radar.glsl",
-      "start": 10131212,
-      "end": 10134427
+      "start": 10131328,
+      "end": 10134543
     }, {
       "filename": "/resources/shaders/skybox.glsl",
-      "start": 10134427,
-      "end": 10135877
+      "start": 10134543,
+      "end": 10135993
     }, {
       "filename": "/resources/shaders/terrain.glsl",
-      "start": 10135877,
-      "end": 10137844
+      "start": 10135993,
+      "end": 10137960
     }, {
       "filename": "/resources/shaders/trails.glsl",
-      "start": 10137844,
-      "end": 10139438
+      "start": 10137960,
+      "end": 10139554
     }, {
       "filename": "/resources/shaders/ui_circle.glsl",
-      "start": 10139438,
-      "end": 10140531
+      "start": 10139554,
+      "end": 10140647
     }, {
       "filename": "/resources/shaders/ui_square.glsl",
-      "start": 10140531,
-      "end": 10142376
+      "start": 10140647,
+      "end": 10142492
     }, {
       "filename": "/resources/shaders/water.glsl",
-      "start": 10142376,
-      "end": 10143555
+      "start": 10142492,
+      "end": 10143671
     }, {
       "filename": "/resources/textures/3dNoiseTexture.png",
-      "start": 10143555,
-      "end": 10483761
+      "start": 10143671,
+      "end": 10483877
     }, {
       "filename": "/resources/textures/heightmap.png",
-      "start": 10483761,
-      "end": 11008704
+      "start": 10483877,
+      "end": 11008820
     }, {
       "filename": "/resources/textures/islandHeightmap.png",
-      "start": 11008704,
-      "end": 11108402
+      "start": 11008820,
+      "end": 11108518
     }, {
       "filename": "/resources/textures/noiseTexture.png",
-      "start": 11108402,
-      "end": 11161755
+      "start": 11108518,
+      "end": 11161871
     }, {
       "filename": "/resources/textures/test.png",
-      "start": 11161755,
-      "end": 11171370
+      "start": 11161871,
+      "end": 11171486
     }, {
       "filename": "/resources/textures/waterNormal.png",
-      "start": 11171370,
-      "end": 11321899
+      "start": 11171486,
+      "end": 11322015
     } ],
-    "remote_package_size": 11321899
+    "remote_package_size": 11322015
   });
 })();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmp3sak5yex.js
-// include: C:\Users\micha\AppData\Local\Temp\tmpzwyczl_v.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmpxehavkft.js
+// include: C:\Users\micha\AppData\Local\Temp\tmpt1zb96vu.js
 // All the pre-js content up to here must remain later on, we need to run
 // it.
 if ((typeof ENVIRONMENT_IS_WASM_WORKER != "undefined" && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != "undefined" && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != "undefined" && ENVIRONMENT_IS_AUDIO_WORKLET)) Module["preRun"] = [];
 
 var necessaryPreJSTasks = Module["preRun"].slice();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmpzwyczl_v.js
-// include: C:\Users\micha\AppData\Local\Temp\tmp_tofk2ya.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmpt1zb96vu.js
+// include: C:\Users\micha\AppData\Local\Temp\tmp5s1u65ea.js
 if (!Module["preRun"]) throw "Module.preRun should exist because file support used it; did a pre-js delete it?";
 
 necessaryPreJSTasks.forEach(task => {
   if (Module["preRun"].indexOf(task) < 0) throw "All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?";
 });
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmp_tofk2ya.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmp5s1u65ea.js
 var arguments_ = [];
 
 var thisProgram = "./this.program";
@@ -8344,6 +8344,8 @@ var _glfwWindowHint = (target, hint) => {
   GLFW.hints[target] = hint;
 };
 
+var _llvm_eh_typeid_for = type => type;
+
 var FS_createPath = (...args) => FS.createPath(...args);
 
 var FS_unlink = (...args) => FS.unlink(...args);
@@ -8471,7 +8473,7 @@ function checkIncomingModuleAPI() {
 }
 
 var ASM_CONSTS = {
-  282532: ($0, $1, $2, $3, $4) => {
+  282740: ($0, $1, $2, $3, $4) => {
     if (typeof window === "undefined" || (window.AudioContext || window.webkitAudioContext) === undefined) {
       return 0;
     }
@@ -8543,7 +8545,7 @@ var ASM_CONSTS = {
     window.miniaudio.referenceCount += 1;
     return 1;
   },
-  284710: () => {
+  284918: () => {
     if (typeof (window.miniaudio) !== "undefined") {
       window.miniaudio.unlock_event_types.map(function(event_type) {
         document.removeEventListener(event_type, window.miniaudio.unlock, true);
@@ -8554,8 +8556,8 @@ var ASM_CONSTS = {
       }
     }
   },
-  285014: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
-  285118: () => {
+  285222: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
+  285326: () => {
     try {
       var temp = new (window.AudioContext || window.webkitAudioContext);
       var sampleRate = temp.sampleRate;
@@ -8565,7 +8567,7 @@ var ASM_CONSTS = {
       return 0;
     }
   },
-  285289: ($0, $1, $2, $3, $4, $5) => {
+  285497: ($0, $1, $2, $3, $4, $5) => {
     var deviceType = $0;
     var channels = $1;
     var sampleRate = $2;
@@ -8636,8 +8638,8 @@ var ASM_CONSTS = {
     device.pDevice = pDevice;
     return window.miniaudio.track_device(device);
   },
-  288166: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
-  288239: $0 => {
+  288374: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
+  288447: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     if (device.scriptNode !== undefined) {
       device.scriptNode.onaudioprocess = function(e) {};
@@ -8652,15 +8654,15 @@ var ASM_CONSTS = {
     device.webaudio = undefined;
     device.pDevice = undefined;
   },
-  288639: $0 => {
+  288847: $0 => {
     window.miniaudio.untrack_device_by_index($0);
   },
-  288689: $0 => {
+  288897: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.resume();
     device.state = window.miniaudio.device_state.started;
   },
-  288828: $0 => {
+  289036: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.suspend();
     device.state = window.miniaudio.device_state.stopped;
@@ -8955,6 +8957,7 @@ var wasmImports = {
   /** @export */ invoke_viif,
   /** @export */ invoke_viifi,
   /** @export */ invoke_viii,
+  /** @export */ invoke_viiid,
   /** @export */ invoke_viiif,
   /** @export */ invoke_viiifi,
   /** @export */ invoke_viiii,
@@ -8965,6 +8968,7 @@ var wasmImports = {
   /** @export */ invoke_viiiiiiiiii,
   /** @export */ invoke_viiiiiiiiiiiiiii,
   /** @export */ invoke_viijii,
+  /** @export */ llvm_eh_typeid_for: _llvm_eh_typeid_for,
   /** @export */ segfault
 };
 
@@ -9203,6 +9207,17 @@ function invoke_vifi(index, a1, a2, a3) {
   var sp = stackSave();
   try {
     getWasmTableEntry(index)(a1, a2, a3);
+  } catch (e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_viiid(index, a1, a2, a3, a4) {
+  var sp = stackSave();
+  try {
+    getWasmTableEntry(index)(a1, a2, a3, a4);
   } catch (e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
