@@ -68,7 +68,7 @@ var ENVIRONMENT_IS_SHELL = !ENVIRONMENT_IS_WEB && !ENVIRONMENT_IS_NODE && !ENVIR
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: C:\Users\micha\AppData\Local\Temp\tmph2so37m_.js
+// include: C:\Users\micha\AppData\Local\Temp\tmpdvssrps2.js
 if (!Module["expectedDataFileDownloads"]) Module["expectedDataFileDownloads"] = 0;
 
 Module["expectedDataFileDownloads"]++;
@@ -155,6 +155,9 @@ Module["expectedDataFileDownloads"]++;
       Module["FS_createPath"]("/resources", "fonts", true, true);
       Module["FS_createPath"]("/resources", "maps", true, true);
       Module["FS_createPath"]("/resources", "meshes", true, true);
+      Module["FS_createPath"]("/resources/meshes", "FA-XX", true, true);
+      Module["FS_createPath"]("/resources/meshes", "aim7", true, true);
+      Module["FS_createPath"]("/resources/meshes", "aim9", true, true);
       Module["FS_createPath"]("/resources", "shaders", true, true);
       Module["FS_createPath"]("/resources", "textures", true, true);
       for (var file of metadata["files"]) {
@@ -197,169 +200,257 @@ Module["expectedDataFileDownloads"]++;
     "files": [ {
       "filename": "/resources/aircraft/FA-XX.json",
       "start": 0,
-      "end": 996
+      "end": 1268
     }, {
       "filename": "/resources/audio/click.wav",
-      "start": 996,
-      "end": 331912
+      "start": 1268,
+      "end": 332184
     }, {
       "filename": "/resources/audio/engine.wav",
-      "start": 331912,
-      "end": 811956
+      "start": 332184,
+      "end": 812228
+    }, {
+      "filename": "/resources/audio/explosion.wav",
+      "start": 812228,
+      "end": 1369874
+    }, {
+      "filename": "/resources/audio/flare.wav",
+      "start": 1369874,
+      "end": 1383086
     }, {
       "filename": "/resources/audio/glass_006.wav",
-      "start": 811956,
-      "end": 823682
+      "start": 1383086,
+      "end": 1394812
     }, {
       "filename": "/resources/audio/glitch_004.wav",
-      "start": 823682,
-      "end": 827288
+      "start": 1394812,
+      "end": 1398418
+    }, {
+      "filename": "/resources/audio/launch.wav",
+      "start": 1398418,
+      "end": 1482320
+    }, {
+      "filename": "/resources/audio/lock_alert.wav",
+      "start": 1482320,
+      "end": 1520448
+    }, {
+      "filename": "/resources/audio/shot.wav",
+      "start": 1520448,
+      "end": 1554004
+    }, {
+      "filename": "/resources/audio/shotDown.wav",
+      "start": 1554004,
+      "end": 2111650
+    }, {
+      "filename": "/resources/audio/tone.wav",
+      "start": 2111650,
+      "end": 2772932
     }, {
       "filename": "/resources/fonts/JetBrainsMono-Bold.ttf",
-      "start": 827288,
-      "end": 1105116
+      "start": 2772932,
+      "end": 3050760
     }, {
       "filename": "/resources/fonts/JetBrainsMono-Light.ttf",
-      "start": 1105116,
-      "end": 1381568
+      "start": 3050760,
+      "end": 3327212
     }, {
       "filename": "/resources/fonts/JetBrainsMono-Medium.ttf",
-      "start": 1381568,
-      "end": 1655428
+      "start": 3327212,
+      "end": 3601072
+    }, {
+      "filename": "/resources/maps/canyon.json",
+      "start": 3601072,
+      "end": 3601813
     }, {
       "filename": "/resources/maps/island.json",
-      "start": 1655428,
-      "end": 1655963
+      "start": 3601813,
+      "end": 3602543
     }, {
-      "filename": "/resources/meshes/albedo.png",
-      "start": 1655963,
-      "end": 1875016
+      "filename": "/resources/maps/mountain.json",
+      "start": 3602543,
+      "end": 3603283
     }, {
-      "filename": "/resources/meshes/ao.png",
-      "start": 1875016,
-      "end": 2268836
+      "filename": "/resources/meshes/FA-XX/albedo.png",
+      "start": 3603283,
+      "end": 3826921
     }, {
-      "filename": "/resources/meshes/demo_jet.bin",
-      "start": 2268836,
-      "end": 2351520
+      "filename": "/resources/meshes/FA-XX/ao.png",
+      "start": 3826921,
+      "end": 4220741
     }, {
-      "filename": "/resources/meshes/demo_jet.gltf",
-      "start": 2351520,
-      "end": 2357528
+      "filename": "/resources/meshes/FA-XX/demo_jet.bin",
+      "start": 4220741,
+      "end": 4307761
     }, {
-      "filename": "/resources/meshes/emmission.png",
-      "start": 2357528,
-      "end": 2445250
+      "filename": "/resources/meshes/FA-XX/demo_jet.gltf",
+      "start": 4307761,
+      "end": 4313489
     }, {
-      "filename": "/resources/meshes/roughness.png",
-      "start": 2445250,
-      "end": 2548469
+      "filename": "/resources/meshes/FA-XX/emmission.png",
+      "start": 4313489,
+      "end": 4401284
+    }, {
+      "filename": "/resources/meshes/FA-XX/roughness.png",
+      "start": 4401284,
+      "end": 4504503
+    }, {
+      "filename": "/resources/meshes/aim7/aim7.bin",
+      "start": 4504503,
+      "end": 4513899
+    }, {
+      "filename": "/resources/meshes/aim7/aim7.gltf",
+      "start": 4513899,
+      "end": 4515851
+    }, {
+      "filename": "/resources/meshes/aim7/albedo.png",
+      "start": 4515851,
+      "end": 4586873
+    }, {
+      "filename": "/resources/meshes/aim9/aim9.bin",
+      "start": 4586873,
+      "end": 4596557
+    }, {
+      "filename": "/resources/meshes/aim9/aim9.gltf",
+      "start": 4596557,
+      "end": 4601185
+    }, {
+      "filename": "/resources/meshes/aim9/albedo.png",
+      "start": 4601185,
+      "end": 4670435
     }, {
       "filename": "/resources/shaders/aircraft.glsl",
-      "start": 2548469,
-      "end": 2550762
+      "start": 4670435,
+      "end": 4672728
     }, {
       "filename": "/resources/shaders/clouds.glsl",
-      "start": 2550762,
-      "end": 2556587
+      "start": 4672728,
+      "end": 4678552
     }, {
       "filename": "/resources/shaders/compass.glsl",
-      "start": 2556587,
-      "end": 2559306
+      "start": 4678552,
+      "end": 4681271
     }, {
       "filename": "/resources/shaders/debug.glsl",
-      "start": 2559306,
-      "end": 2560552
+      "start": 4681271,
+      "end": 4682517
     }, {
       "filename": "/resources/shaders/explosion.glsl",
-      "start": 2560552,
-      "end": 2561926
+      "start": 4682517,
+      "end": 4683891
+    }, {
+      "filename": "/resources/shaders/flares.glsl",
+      "start": 4683891,
+      "end": 4685548
     }, {
       "filename": "/resources/shaders/flat.glsl",
-      "start": 2561926,
-      "end": 2563356
+      "start": 4685548,
+      "end": 4686978
     }, {
       "filename": "/resources/shaders/font.glsl",
-      "start": 2563356,
-      "end": 2564015
+      "start": 4686978,
+      "end": 4687637
+    }, {
+      "filename": "/resources/shaders/missile.glsl",
+      "start": 4687637,
+      "end": 4689692
+    }, {
+      "filename": "/resources/shaders/missileTrail.glsl",
+      "start": 4689692,
+      "end": 4690936
     }, {
       "filename": "/resources/shaders/particles.glsl",
-      "start": 2564015,
-      "end": 2565550
+      "start": 4690936,
+      "end": 4692471
+    }, {
+      "filename": "/resources/shaders/post.glsl",
+      "start": 4692471,
+      "end": 4693349
     }, {
       "filename": "/resources/shaders/radar.glsl",
-      "start": 2565550,
-      "end": 2568765
+      "start": 4693349,
+      "end": 4696687
     }, {
       "filename": "/resources/shaders/skybox.glsl",
-      "start": 2568765,
-      "end": 2570215
+      "start": 4696687,
+      "end": 4698137
     }, {
       "filename": "/resources/shaders/terrain.glsl",
-      "start": 2570215,
-      "end": 2572182
+      "start": 4698137,
+      "end": 4700104
+    }, {
+      "filename": "/resources/shaders/tracer.glsl",
+      "start": 4700104,
+      "end": 4702027
     }, {
       "filename": "/resources/shaders/trails.glsl",
-      "start": 2572182,
-      "end": 2573776
+      "start": 4702027,
+      "end": 4703621
     }, {
       "filename": "/resources/shaders/ui_circle.glsl",
-      "start": 2573776,
-      "end": 2574869
+      "start": 4703621,
+      "end": 4704714
     }, {
       "filename": "/resources/shaders/ui_square.glsl",
-      "start": 2574869,
-      "end": 2576714
+      "start": 4704714,
+      "end": 4706559
     }, {
       "filename": "/resources/shaders/water.glsl",
-      "start": 2576714,
-      "end": 2577893
+      "start": 4706559,
+      "end": 4707738
     }, {
       "filename": "/resources/textures/3dNoiseTexture.png",
-      "start": 2577893,
-      "end": 2918099
+      "start": 4707738,
+      "end": 5047944
+    }, {
+      "filename": "/resources/textures/LUT.png",
+      "start": 5047944,
+      "end": 5289351
+    }, {
+      "filename": "/resources/textures/canyonHeightmap.png",
+      "start": 5289351,
+      "end": 5814294
     }, {
       "filename": "/resources/textures/heightmap.png",
-      "start": 2918099,
-      "end": 3443042
+      "start": 5814294,
+      "end": 6339237
     }, {
       "filename": "/resources/textures/islandHeightmap.png",
-      "start": 3443042,
-      "end": 3542740
+      "start": 6339237,
+      "end": 6438935
+    }, {
+      "filename": "/resources/textures/mountainHeightmap.png",
+      "start": 6438935,
+      "end": 6963878
     }, {
       "filename": "/resources/textures/noiseTexture.png",
-      "start": 3542740,
-      "end": 3596093
-    }, {
-      "filename": "/resources/textures/test.png",
-      "start": 3596093,
-      "end": 3605708
+      "start": 6963878,
+      "end": 7017231
     }, {
       "filename": "/resources/textures/waterNormal.png",
-      "start": 3605708,
-      "end": 3756237
+      "start": 7017231,
+      "end": 7167760
     } ],
-    "remote_package_size": 3756237
+    "remote_package_size": 7167760
   });
 })();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmph2so37m_.js
-// include: C:\Users\micha\AppData\Local\Temp\tmpc3f175az.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmpdvssrps2.js
+// include: C:\Users\micha\AppData\Local\Temp\tmpn94boxyh.js
 // All the pre-js content up to here must remain later on, we need to run
 // it.
 if ((typeof ENVIRONMENT_IS_WASM_WORKER != "undefined" && ENVIRONMENT_IS_WASM_WORKER) || (typeof ENVIRONMENT_IS_PTHREAD != "undefined" && ENVIRONMENT_IS_PTHREAD) || (typeof ENVIRONMENT_IS_AUDIO_WORKLET != "undefined" && ENVIRONMENT_IS_AUDIO_WORKLET)) Module["preRun"] = [];
 
 var necessaryPreJSTasks = Module["preRun"].slice();
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmpc3f175az.js
-// include: C:\Users\micha\AppData\Local\Temp\tmpzvld99cj.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmpn94boxyh.js
+// include: C:\Users\micha\AppData\Local\Temp\tmppxvf3jda.js
 if (!Module["preRun"]) throw "Module.preRun should exist because file support used it; did a pre-js delete it?";
 
 necessaryPreJSTasks.forEach(task => {
   if (Module["preRun"].indexOf(task) < 0) throw "All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?";
 });
 
-// end include: C:\Users\micha\AppData\Local\Temp\tmpzvld99cj.js
+// end include: C:\Users\micha\AppData\Local\Temp\tmppxvf3jda.js
 var arguments_ = [];
 
 var thisProgram = "./this.program";
@@ -5641,6 +5732,18 @@ var _emscripten_glBindBuffer = (target, buffer) => {
 
 var _glBindBuffer = _emscripten_glBindBuffer;
 
+var _emscripten_glBindFramebuffer = (target, framebuffer) => {
+  GLctx.bindFramebuffer(target, GL.framebuffers[framebuffer]);
+};
+
+var _glBindFramebuffer = _emscripten_glBindFramebuffer;
+
+var _emscripten_glBindRenderbuffer = (target, renderbuffer) => {
+  GLctx.bindRenderbuffer(target, GL.renderbuffers[renderbuffer]);
+};
+
+var _glBindRenderbuffer = _emscripten_glBindRenderbuffer;
+
 var _emscripten_glBindTexture = (target, texture) => {
   GLctx.bindTexture(target, GL.textures[texture]);
 };
@@ -5682,6 +5785,10 @@ var _emscripten_glBufferSubData = (target, offset, size, data) => {
 };
 
 var _glBufferSubData = _emscripten_glBufferSubData;
+
+var _emscripten_glCheckFramebufferStatus = x0 => GLctx.checkFramebufferStatus(x0);
+
+var _glCheckFramebufferStatus = _emscripten_glCheckFramebufferStatus;
 
 var _emscripten_glClear = x0 => GLctx.clear(x0);
 
@@ -5736,6 +5843,20 @@ var _emscripten_glDeleteBuffers = (n, buffers) => {
 };
 
 var _glDeleteBuffers = _emscripten_glDeleteBuffers;
+
+var _emscripten_glDeleteFramebuffers = (n, framebuffers) => {
+  for (var i = 0; i < n; ++i) {
+    var id = HEAP32[SAFE_HEAP_INDEX(HEAP32, (((framebuffers) + (i * 4)) >> 2), "loading")];
+    var framebuffer = GL.framebuffers[id];
+    if (!framebuffer) continue;
+    // GL spec: "glDeleteFramebuffers silently ignores 0s and names that do not correspond to existing framebuffer objects".
+    GLctx.deleteFramebuffer(framebuffer);
+    framebuffer.name = 0;
+    GL.framebuffers[id] = null;
+  }
+};
+
+var _glDeleteFramebuffers = _emscripten_glDeleteFramebuffers;
 
 var _emscripten_glDeleteProgram = id => {
   if (!id) return;
@@ -5835,11 +5956,35 @@ var _emscripten_glEnableVertexAttribArray = index => {
 
 var _glEnableVertexAttribArray = _emscripten_glEnableVertexAttribArray;
 
+var _emscripten_glFramebufferRenderbuffer = (target, attachment, renderbuffertarget, renderbuffer) => {
+  GLctx.framebufferRenderbuffer(target, attachment, renderbuffertarget, GL.renderbuffers[renderbuffer]);
+};
+
+var _glFramebufferRenderbuffer = _emscripten_glFramebufferRenderbuffer;
+
+var _emscripten_glFramebufferTexture2D = (target, attachment, textarget, texture, level) => {
+  GLctx.framebufferTexture2D(target, attachment, textarget, GL.textures[texture], level);
+};
+
+var _glFramebufferTexture2D = _emscripten_glFramebufferTexture2D;
+
 var _emscripten_glGenBuffers = (n, buffers) => {
   GL.genObject(n, buffers, "createBuffer", GL.buffers);
 };
 
 var _glGenBuffers = _emscripten_glGenBuffers;
+
+var _emscripten_glGenFramebuffers = (n, ids) => {
+  GL.genObject(n, ids, "createFramebuffer", GL.framebuffers);
+};
+
+var _glGenFramebuffers = _emscripten_glGenFramebuffers;
+
+var _emscripten_glGenRenderbuffers = (n, renderbuffers) => {
+  GL.genObject(n, renderbuffers, "createRenderbuffer", GL.renderbuffers);
+};
+
+var _glGenRenderbuffers = _emscripten_glGenRenderbuffers;
 
 var _emscripten_glGenTextures = (n, textures) => {
   GL.genObject(n, textures, "createTexture", GL.textures);
@@ -5856,14 +6001,6 @@ var _glGenVertexArrays = _emscripten_glGenVertexArrays;
 var _emscripten_glGenerateMipmap = x0 => GLctx.generateMipmap(x0);
 
 var _glGenerateMipmap = _emscripten_glGenerateMipmap;
-
-var _emscripten_glGetError = () => {
-  var error = GLctx.getError() || GL.lastError;
-  GL.lastError = 0;
-  return error;
-};
-
-var _glGetError = _emscripten_glGetError;
 
 var _emscripten_glGetProgramInfoLog = (program, maxLength, length, infoLog) => {
   var log = GLctx.getProgramInfoLog(GL.programs[program]);
@@ -6083,6 +6220,10 @@ var _emscripten_glPixelStorei = (pname, param) => {
 };
 
 var _glPixelStorei = _emscripten_glPixelStorei;
+
+var _emscripten_glRenderbufferStorage = (x0, x1, x2, x3) => GLctx.renderbufferStorage(x0, x1, x2, x3);
+
+var _glRenderbufferStorage = _emscripten_glRenderbufferStorage;
 
 var _emscripten_glShaderSource = (shader, count, string, length) => {
   var source = GL.getSource(shader, count, string, length);
@@ -8460,8 +8601,8 @@ function checkIncomingModuleAPI() {
 }
 
 var ASM_CONSTS = {
-  283188: () => document.hidden ? 0 : 1,
-  283224: ($0, $1, $2, $3, $4) => {
+  286260: () => document.hidden ? 0 : 1,
+  286296: ($0, $1, $2, $3, $4) => {
     if (typeof window === "undefined" || (window.AudioContext || window.webkitAudioContext) === undefined) {
       return 0;
     }
@@ -8533,7 +8674,7 @@ var ASM_CONSTS = {
     window.miniaudio.referenceCount += 1;
     return 1;
   },
-  285402: () => {
+  288474: () => {
     if (typeof (window.miniaudio) !== "undefined") {
       window.miniaudio.unlock_event_types.map(function(event_type) {
         document.removeEventListener(event_type, window.miniaudio.unlock, true);
@@ -8544,8 +8685,8 @@ var ASM_CONSTS = {
       }
     }
   },
-  285706: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
-  285810: () => {
+  288778: () => (navigator.mediaDevices !== undefined && navigator.mediaDevices.getUserMedia !== undefined),
+  288882: () => {
     try {
       var temp = new (window.AudioContext || window.webkitAudioContext);
       var sampleRate = temp.sampleRate;
@@ -8555,7 +8696,7 @@ var ASM_CONSTS = {
       return 0;
     }
   },
-  285981: ($0, $1, $2, $3, $4, $5) => {
+  289053: ($0, $1, $2, $3, $4, $5) => {
     var deviceType = $0;
     var channels = $1;
     var sampleRate = $2;
@@ -8626,8 +8767,8 @@ var ASM_CONSTS = {
     device.pDevice = pDevice;
     return window.miniaudio.track_device(device);
   },
-  288858: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
-  288931: $0 => {
+  291930: $0 => window.miniaudio.get_device_by_index($0).webaudio.sampleRate,
+  292003: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     if (device.scriptNode !== undefined) {
       device.scriptNode.onaudioprocess = function(e) {};
@@ -8642,15 +8783,15 @@ var ASM_CONSTS = {
     device.webaudio = undefined;
     device.pDevice = undefined;
   },
-  289331: $0 => {
+  292403: $0 => {
     window.miniaudio.untrack_device_by_index($0);
   },
-  289381: $0 => {
+  292453: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.resume();
     device.state = window.miniaudio.device_state.started;
   },
-  289520: $0 => {
+  292592: $0 => {
     var device = window.miniaudio.get_device_by_index($0);
     device.webaudio.suspend();
     device.state = window.miniaudio.device_state.stopped;
@@ -8842,17 +8983,21 @@ var wasmImports = {
   /** @export */ glActiveTexture: _glActiveTexture,
   /** @export */ glAttachShader: _glAttachShader,
   /** @export */ glBindBuffer: _glBindBuffer,
+  /** @export */ glBindFramebuffer: _glBindFramebuffer,
+  /** @export */ glBindRenderbuffer: _glBindRenderbuffer,
   /** @export */ glBindTexture: _glBindTexture,
   /** @export */ glBindVertexArray: _glBindVertexArray,
   /** @export */ glBlendFunc: _glBlendFunc,
   /** @export */ glBufferData: _glBufferData,
   /** @export */ glBufferSubData: _glBufferSubData,
+  /** @export */ glCheckFramebufferStatus: _glCheckFramebufferStatus,
   /** @export */ glClear: _glClear,
   /** @export */ glClearColor: _glClearColor,
   /** @export */ glCompileShader: _glCompileShader,
   /** @export */ glCreateProgram: _glCreateProgram,
   /** @export */ glCreateShader: _glCreateShader,
   /** @export */ glDeleteBuffers: _glDeleteBuffers,
+  /** @export */ glDeleteFramebuffers: _glDeleteFramebuffers,
   /** @export */ glDeleteProgram: _glDeleteProgram,
   /** @export */ glDeleteShader: _glDeleteShader,
   /** @export */ glDeleteTextures: _glDeleteTextures,
@@ -8865,11 +9010,14 @@ var wasmImports = {
   /** @export */ glDrawElementsInstanced: _glDrawElementsInstanced,
   /** @export */ glEnable: _glEnable,
   /** @export */ glEnableVertexAttribArray: _glEnableVertexAttribArray,
+  /** @export */ glFramebufferRenderbuffer: _glFramebufferRenderbuffer,
+  /** @export */ glFramebufferTexture2D: _glFramebufferTexture2D,
   /** @export */ glGenBuffers: _glGenBuffers,
+  /** @export */ glGenFramebuffers: _glGenFramebuffers,
+  /** @export */ glGenRenderbuffers: _glGenRenderbuffers,
   /** @export */ glGenTextures: _glGenTextures,
   /** @export */ glGenVertexArrays: _glGenVertexArrays,
   /** @export */ glGenerateMipmap: _glGenerateMipmap,
-  /** @export */ glGetError: _glGetError,
   /** @export */ glGetProgramInfoLog: _glGetProgramInfoLog,
   /** @export */ glGetProgramiv: _glGetProgramiv,
   /** @export */ glGetShaderInfoLog: _glGetShaderInfoLog,
@@ -8877,6 +9025,7 @@ var wasmImports = {
   /** @export */ glGetUniformLocation: _glGetUniformLocation,
   /** @export */ glLinkProgram: _glLinkProgram,
   /** @export */ glPixelStorei: _glPixelStorei,
+  /** @export */ glRenderbufferStorage: _glRenderbufferStorage,
   /** @export */ glShaderSource: _glShaderSource,
   /** @export */ glTexImage2D: _glTexImage2D,
   /** @export */ glTexImage3D: _glTexImage3D,
@@ -8998,6 +9147,17 @@ function invoke_vii(index, a1, a2) {
   }
 }
 
+function invoke_viii(index, a1, a2, a3) {
+  var sp = stackSave();
+  try {
+    getWasmTableEntry(index)(a1, a2, a3);
+  } catch (e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
 function invoke_iii(index, a1, a2) {
   var sp = stackSave();
   try {
@@ -9046,17 +9206,6 @@ function invoke_iiii(index, a1, a2, a3) {
   var sp = stackSave();
   try {
     return getWasmTableEntry(index)(a1, a2, a3);
-  } catch (e) {
-    stackRestore(sp);
-    if (!(e instanceof EmscriptenEH)) throw e;
-    _setThrew(1, 0);
-  }
-}
-
-function invoke_viii(index, a1, a2, a3) {
-  var sp = stackSave();
-  try {
-    getWasmTableEntry(index)(a1, a2, a3);
   } catch (e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -9130,6 +9279,17 @@ function invoke_fii(index, a1, a2) {
   }
 }
 
+function invoke_viiif(index, a1, a2, a3, a4) {
+  var sp = stackSave();
+  try {
+    getWasmTableEntry(index)(a1, a2, a3, a4);
+  } catch (e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
 function invoke_vid(index, a1, a2) {
   var sp = stackSave();
   try {
@@ -9185,10 +9345,10 @@ function invoke_iiiii(index, a1, a2, a3, a4) {
   }
 }
 
-function invoke_viiif(index, a1, a2, a3, a4) {
+function invoke_viiiii(index, a1, a2, a3, a4, a5) {
   var sp = stackSave();
   try {
-    getWasmTableEntry(index)(a1, a2, a3, a4);
+    getWasmTableEntry(index)(a1, a2, a3, a4, a5);
   } catch (e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -9218,17 +9378,6 @@ function invoke_viiid(index, a1, a2, a3, a4) {
   }
 }
 
-function invoke_iif(index, a1, a2) {
-  var sp = stackSave();
-  try {
-    return getWasmTableEntry(index)(a1, a2);
-  } catch (e) {
-    stackRestore(sp);
-    if (!(e instanceof EmscriptenEH)) throw e;
-    _setThrew(1, 0);
-  }
-}
-
 function invoke_viiifi(index, a1, a2, a3, a4, a5) {
   var sp = stackSave();
   try {
@@ -9244,17 +9393,6 @@ function invoke_viiff(index, a1, a2, a3, a4) {
   var sp = stackSave();
   try {
     getWasmTableEntry(index)(a1, a2, a3, a4);
-  } catch (e) {
-    stackRestore(sp);
-    if (!(e instanceof EmscriptenEH)) throw e;
-    _setThrew(1, 0);
-  }
-}
-
-function invoke_viiiii(index, a1, a2, a3, a4, a5) {
-  var sp = stackSave();
-  try {
-    getWasmTableEntry(index)(a1, a2, a3, a4, a5);
   } catch (e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
@@ -9354,6 +9492,17 @@ function invoke_iiji(index, a1, a2, a3) {
   var sp = stackSave();
   try {
     return getWasmTableEntry(index)(a1, a2, a3);
+  } catch (e) {
+    stackRestore(sp);
+    if (!(e instanceof EmscriptenEH)) throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_iif(index, a1, a2) {
+  var sp = stackSave();
+  try {
+    return getWasmTableEntry(index)(a1, a2);
   } catch (e) {
     stackRestore(sp);
     if (!(e instanceof EmscriptenEH)) throw e;
